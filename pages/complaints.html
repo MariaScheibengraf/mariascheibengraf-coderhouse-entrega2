@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link al CSS de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Link a mi CSS-->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <title>COMPLAINTS</title>
+</head>
+<body class="complaints">
+    <header>
+        <div class="logo-image">
+            <img src="../img/tritrab_logo.png" alt="Logo de tritrab en color">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Complaints
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="complaints.html#submitcomplaint">File a Complaint</a></li>
+                          <li><a class="dropdown-item" href="complaints.html#viewcomplaints">View Complaints</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+    </header>
+    
+    <main class="container complaints-content">
+
+        <!-- Sección 1: Submit Complaint -->
+        <section id="submitcomplaint" class="mb-5 text-center">
+          <h1 class="mb-4">Submit Complaint</h1>
+      
+          <form class="complaint-form mx-auto">
+            <input type="text" class="form-control mb-3" placeholder="Subject" />
+      
+            <textarea class="form-control mb-3" rows="5" placeholder="Describe the issue..."></textarea>
+      
+            <button type="submit" class="btn btn-primary px-5">Submit</button>
+          </form>
+        </section>
+      
+        <!-- Sección 2: View Complaints -->
+        <section id="viewcomplaints" class="text-start">
+          <h2 class="mb-4 text-center">View Complaints</h2>
+      
+          <div class="complaint-list">
+            <!-- Cajas de denuncias -->
+            <div class="complaint-card mb-4 p-3 shadow-sm bg-white rounded">
+                <h5><strong>Reported Company:</strong> LinguaPro Ltd.</h5>
+                <p><strong>Title:</strong> Invoice ignored for 2 months</p>
+                <p><strong>Description:</strong> I’ve followed up multiple times regarding an unpaid invoice and received no response.</p>
+              </div>
+              
+              <div class="complaint-card mb-4 p-3 shadow-sm bg-white rounded">
+                <h5><strong>Reported Company:</strong> Global Lingo</h5>
+                <p><strong>Title:</strong> Unreasonable deadlines and pressure</p>
+                <p><strong>Description:</strong> They gave me a 10k word project due in 24 hours with no compensation for urgency.</p>
+              </div>
+              
+              <div class="complaint-card mb-4 p-3 shadow-sm bg-white rounded">
+                <h5><strong>Reported Company:</strong> SwiftWords</h5>
+                <p><strong>Title:</strong> Changed terms after delivery</p>
+                <p><strong>Description:</strong> After delivering the work, they reduced my rate claiming budget issues.</p>
+              </div>
+              
+              <div class="complaint-card mb-4 p-3 shadow-sm bg-white rounded">
+                <h5><strong>Reported Company:</strong> TransLingua Solutions</h5>
+                <p><strong>Title:</strong> Payment rejected with no reason</p>
+                <p><strong>Description:</strong> They claimed the translation was “unusable” but never provided feedback or samples.</p>
+              </div>
+              
+              <div class="complaint-card mb-4 p-3 shadow-sm bg-white rounded">
+                <h5><strong>Reported Company:</strong> NovaTrans</h5>
+                <p><strong>Title:</strong> Disrespectful communication</p>
+                <p><strong>Description:</strong> Project manager used rude language and blamed me for their internal mistakes.</p>
+              </div>
+            </div>
+        </section>
+      
+    </main>
+    <footer>
+        <!--Lo que viene debajo es el footer-->
+        <footer>
+            <p>
+            2025 TRI-TRAB. All rights reserved.
+            </p>
+        </footer>
+        <!-- Link a Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
