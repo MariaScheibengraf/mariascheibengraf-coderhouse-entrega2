@@ -1,0 +1,114 @@
+@use "../abstracts/variables";
+@use "../abstracts/listas";
+@use "../abstracts/mapas";
+@use "../abstracts/mixin";
+@use "../base/reset";
+
+/* HERO TEXTOS + IMAGEN */
+section.hero {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.texts {
+    flex: 1 1 100%;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+  
+    h1 {
+      font-size: variables.$tamano-grande;
+      color: variables.$color-principal;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+  
+      span {
+        color: variables.$color-principal-claro;
+        font-weight: bold;
+      }
+    }
+  
+    p {
+      font-size: variables.$tamano-mediano;
+      color: variables.$color-texto;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+
+/* Contenedor de imagen del hero */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 2rem;
+
+  img {
+    width: 80%;
+    max-width: 600px;
+    filter: variables.$sombra-imagen;
+    padding-top: 1rem;
+  }
+}
+
+/* Info boxes */
+body.home .infobox {
+  background-color: variables.$azul-claro-fondo;
+  padding: 20px;
+  text-align: center;
+  border-radius: variables.$radio-borde;
+  box-shadow: variables.$sombra-standard;
+  margin: 10px;
+}
+
+/* Contenedor general de cajas */
+.boxcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  padding: 0.9375rem;
+  text-align: center;
+}
+
+/* CTA */
+body.home .button-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+body.home .btn-custom {
+  display: inline-block;
+  background-color: variables.$color-principal;
+  color: variables.$blanco;
+  padding: 12px 24px;
+  border-radius: variables.$radio-boton;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: variables.$tamano-base;
+  box-shadow: variables.$sombra-boton;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: variables.$color-principal-claro;
+    transform: translateY(-2px);
+    box-shadow: variables.$sombra-hover;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .boxcontainer {
+    grid-template-columns: 1fr;
+  }
+
+  body.home .btn-custom {
+    padding: 10px 20px;
+    font-size: variables.$tamano-pequeno;
+  }
+
+  body.home .image-container img {
+    width: 100%;
+  }
+}

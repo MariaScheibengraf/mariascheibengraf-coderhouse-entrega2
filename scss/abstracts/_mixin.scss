@@ -1,0 +1,6 @@
+
+@use "variables";
+
+@mixin sombra-estandar {
+    box-shadow: variables.$sombra-standard;
+  }

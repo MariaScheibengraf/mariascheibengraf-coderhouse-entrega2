@@ -1,0 +1,103 @@
+// Utilidades
+@use "./base/reset";
+
+// Utilidades
+@use "./abstracts/variables";
+@use "./abstracts/mixin";
+@use "./abstracts/mapas";
+@use "./abstracts/listas";
+
+// Layout y páginas
+@use "./pages/home";
+@use "./pages/about";
+@use "./pages/blog";
+@use "./pages/complaints";
+@use "./pages/contact";
+
+// Header
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: variables.$color-principal;
+  color: variables.$blanco;
+  padding: 0.5rem 1.5rem;
+
+  .logo-image {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+
+    img {
+      max-height: 4rem;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    li a {
+      color: variables.$blanco;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      color: variables.$color-hover !important;
+    }
+  }
+
+  @media (max-width: map-get(mapas.$breakpoints, mobile)) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+
+    .logo-image {
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap: 10px;
+    }
+
+    nav ul li a {
+      font-size: 0.95rem;
+      padding: 0.5rem 0;
+    }
+  }
+}
+
+// Footer
+
+footer {
+  background-color: variables.$color-principal;
+  color: variables.$blanco;
+  padding: variables.$padding-footer;
+  text-align: center;
+  font-size: variables.$tamano-pequeno;
+
+  a {
+    color: variables.$blanco;
+    text-decoration: underline;
+
+    &:hover {
+      color: variables.$color-mostaza-logo;
+    }
+  }
+
+  @media (max-width: map-get(mapas.$breakpoints, mobile)) {
+    padding: variables.$padding-footer-mobile;
+  }
+}

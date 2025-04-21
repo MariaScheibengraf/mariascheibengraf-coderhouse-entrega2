@@ -1,0 +1,70 @@
+@use "../abstracts/variables";
+@use "../abstracts/listas";
+@use "../abstracts/mapas";
+@use "../abstracts/mixin";
+@use "../base/reset";
+
+.blog-content {
+    margin-top: 2rem;
+  
+    h1 {
+      color: variables.$color-principal;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+  
+  .blog-post {
+    img {
+      width: 100%;
+      max-width: 600px;
+      filter: variables.$sombra-imagen;
+    }
+  
+    .blog-text {
+      font-size: variables.$tamano-base;
+      text-align: left;
+    }
+  }
+  
+  /* Snippets barra lateral */
+  .snippet-box {
+    background-color: variables.$azul-claro-fondo;
+    border-radius: variables.$radio-borde;
+    box-shadow: variables.$sombra-sutil;
+    padding: 1.5rem;
+  
+    h5 {
+      color: variables.$color-principal;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: variables.$tamano-pequeno;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .snippet-post {
+    background-color: variables.$blanco;
+    border-radius: variables.$radio-borde;
+    box-shadow: variables.$sombra-sutil;
+    padding: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    body.blog {
+      .blog-post {
+        align-items: center;
+      }
+  
+      .snippet-box {
+        margin-top: 2rem;
+      }
+  
+      .snippet-post {
+        font-size: variables.$tamano-muy-pequeno;
+      }
+    }
+  }

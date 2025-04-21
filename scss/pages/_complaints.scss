@@ -1,0 +1,99 @@
+@use "../abstracts/variables";
+@use "../abstracts/listas";
+@use "../abstracts/mapas";
+@use "../abstracts/mixin";
+@use "../base/reset";
+
+.complaints-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: variables.$fuente-principal;
+    color: variables.$color-texto;
+  
+    h1,
+    h2 {
+      color: variables.$color-principal;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .complaint-form {
+    max-width: 500px;
+    margin: 0 auto;
+  
+    input,
+    textarea {
+      font-size: variables.$tamano-base;
+      padding: 0.75rem;
+      border-radius: variables.$radio-borde;
+      border: 1px solid variables.$color-hover;
+      margin-bottom: 1rem;
+    }
+  
+    button {
+      font-weight: bold;
+      font-size: variables.$tamano-base;
+      padding: 0.75rem 1.5rem;
+      background-color: variables.$color-mostaza-logo;
+      color: variables.$blanco;
+      border: none;
+      border-radius: variables.$radio-boton;
+  
+      &:hover {
+        background-color: variables.$color-principal-claro;
+      }
+    }
+  }
+  
+  .complaint-card {
+    border-left: 5px solid variables.$color-mostaza-logo;
+    background-color: variables.$blanco;
+    border-radius: variables.$radio-borde;
+    box-shadow: variables.$sombra-sutil;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  
+    h5 {
+      margin-bottom: 0.5rem;
+      color: variables.$color-principal;
+    }
+  
+    p {
+      margin: 0.25rem 0;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .complaints-content {
+      padding: 1rem;
+  
+      h1,
+      h2 {
+        font-size: 1.75rem;
+      }
+    }
+  
+    .complaint-form {
+      padding: 0 1rem;
+  
+      input,
+      textarea {
+        font-size: variables.$tamano-base;
+        padding: 0.75rem;
+      }
+  
+      button {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: variables.$tamano-base;
+      }
+    }
+  
+    .complaint-card {
+      font-size: variables.$tamano-pequeno;
+      padding: 1rem;
+    }
+  }

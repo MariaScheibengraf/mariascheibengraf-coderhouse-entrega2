@@ -1,0 +1,14 @@
+@use "variables";
+
+$colores-logo: (
+  variables.$color-rojo-logo,
+  variables.$color-mostaza-logo
+);
+
+$tamanos-botones: (
+  chico: variables.$tamano-base,
+  mediano: variables.$tamano-mediano,
+  grande: variables.$tamano-grande
+);
+
+$partes-sitio: home, about, blog, contact, complaints;

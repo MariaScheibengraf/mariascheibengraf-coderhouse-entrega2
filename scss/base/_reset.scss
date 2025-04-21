@@ -1,0 +1,59 @@
+@use "../abstracts/variables";
+@use "../abstracts/listas";
+@use "../abstracts/mapas";
+@use "../abstracts/mixin";
+
+// ========== ESTILOS GLOBALES ==========
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: variables.$fuente-principal;
+    font-size: variables.$tamano-base;
+    color: variables.$color-texto;
+    background-color: variables.$color-fondo;
+    line-height: 1.6;
+  }
+  
+  // Encabezados
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: variables.$color-principal;
+  }
+  
+  // Enlaces
+  a {
+    color: variables.$color-principal;
+    text-decoration: none;
+  
+    &:hover {
+      color: variables.$color-principal-claro;
+    }
+  }
+  
+  // Imágenes
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  // Botones
+  button {
+    font-family: variables.$fuente-principal;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  // Clases utilitarias
+  .logo-color-1 {
+    color: variables.$color-rojo-logo;
+  }
+  
+  .logo-color-2 {
+    color: variables.$color-mostaza-logo;
+  }

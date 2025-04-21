@@ -1,0 +1,41 @@
+// Colores principales
+$color-principal: #004080;
+$color-principal-claro: #0066cc;
+$color-fondo: #f4f4f4;
+$color-texto: #333;
+$color-mostaza-logo: #cfbc10;
+$color-rojo-logo: #EC3237;
+$blanco: #ffffff;
+$color-hover: #ddd;
+$azul-claro-fondo: #e6f0ff; // usado en .infobox y .snippet-box
+$gris-sombra: rgba(0, 0, 0, 0.2);
+$gris-sombra-claro: rgba(0, 0, 0, 0.1);
+
+// Tipografías
+$fuente-principal: 'Arial, sans-serif';
+$tamano-base: 1rem;
+$tamano-mediano: 1.1rem;
+$tamano-grande: 2rem;
+$tamano-pequeno: 0.9rem;
+$tamano-muy-pequeno: 0.85rem;
+
+// Espaciados
+$espaciado-general: 2rem;
+$padding-seccion: 50px;
+$padding-header: 10px 20px;
+$padding-header-tablet: 10px 15px;
+$padding-footer: 20px;
+$padding-footer-mobile: 10px;
+
+// Breakpoints
+$breakpoint-tablet: 992px;
+$breakpoint-mobile: 768px;
+
+// Extras útiles
+$sombra-standard: 0 2px 5px rgba(0, 0, 0, 0.2);
+$sombra-hover: 0 6px 12px rgba(0, 0, 0, 0.25);
+$sombra-boton: 0 4px 8px rgba(0, 0, 0, 0.2);
+$sombra-sutil: 0 1px 4px rgba(0, 0, 0, 0.1);
+$sombra-imagen: drop-shadow(10px 10px 10px black);
+$radio-borde: 5px;
+$radio-boton: 30px;

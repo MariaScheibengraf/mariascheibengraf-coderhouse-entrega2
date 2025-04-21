@@ -1,0 +1,7 @@
+@use "variables";
+
+
+$breakpoints: (
+  tablet: variables.$breakpoint-tablet,
+  mobile: variables.$breakpoint-mobile
+);
